@@ -1,8 +1,13 @@
-
-function App() {
+import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
+const App = () => {
   return (
-    <div className="App">
-      hello world :)
+    <div className="app">
+      <Navbar/>
+      <div className="co">
+        <Home/>
+        
+      </div>
     </div>
   );
 }
