@@ -6,7 +6,6 @@ import {IconContext} from "react-icons";
 import {BsGithub} from "react-icons/bs";
 import {MdVisibility} from "react-icons/md";
 
-let easing = [0.6,-0.05,0.01,0.99];
 
 const container = {
     show:{
@@ -42,7 +41,7 @@ const hoverEffect = {
 const Projects = () => {
   return (
     <div className="gg">
-         <motion.div id='projects' className="service_container">
+    <motion.div id='projects' className="service_container">
         <div className="title_wrapper">
             <motion.span className="service_title"
                 initial={{y:20, opacity:0}}

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: f4;
+    src: url(../../fonts/g2.ttf);
+  }
+.about{
+    // background: url("../../assets/img/footer-bg.png");
+    // // background-position-x: 50px; 
+    // background-size: cover;
+    // background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    width: 80%;
+    // justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    // border-radius: 20px;
+
+    .left{
+        width: 40%;
+        img{
+            transition:.5s ease;
+            width: 400px;
+            height: 400px;
+            background: none;
+            &:hover{
+                transform: rotate(10deg);
+                // transform: scale(110%);
+            }
+        }
+    }
+    .right{
+        width: 60%;
+        .cont{
+            padding: 20px;
+            border-image-source:  linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(222,97,97,1) 57%, rgba(255,244,0,1) 100%);
+            border-bottom:solid;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+            transition:0.5s ease-in;
+            &:hover{
+                // transform: rotate(10deg);
+                transform: scale(110%);
+            }
+            
+            h3{
+                font-size: 25px;
+                font-family: f4 !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 10px;
+                color: aquamarine;
+            }
+            p{
+                font-family: f4 !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 20px;
+            }
+        }
+
+    }
+}

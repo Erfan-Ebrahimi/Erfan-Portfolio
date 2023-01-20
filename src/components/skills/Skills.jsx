@@ -1,9 +1,8 @@
-import React from 'react'
-
-const Projects = () => {
+import "./skills.scss";
+const Skills = () => {
   return (
-    <div>Projects</div>
+    <div>Skills</div>
   )
 }
 
-export default Projects
+export default Skills;
