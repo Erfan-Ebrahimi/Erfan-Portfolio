@@ -9,11 +9,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: f1-bold;   */
   font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+body{
+  cursor:url("./assets/n9.cur"),default; 
+  display: block;
+  width:100%;
+  height:100%;
+  background:rgb(0, 0, 0);
+  background-size: cover !important;
+  background-origin: border-box;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+}
+a:hover,img:hover{
+  cursor:url("./assets/n14.cur"),default !important; 
+  
 }
 .app{
   height: 100vh;
 }
-
 

@@ -89,7 +89,7 @@ const btnGroup={
 
 function Home() {
   return (
-    <motion.div initial='initial' animate='animate'>
+    <motion.div initial='initial' animate='animate' className='ll'>
       
       <motion.div className="content_wrapper" initial={{opacity:0,scale:0}} animate={{opacity:1, scale:1}} transition={{duration:0.3, ease:easeing}}>
         
