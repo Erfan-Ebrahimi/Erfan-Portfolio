@@ -9,9 +9,6 @@
     flex-direction: column;
     margin: 0 auto;
 }
-.gg{
-  background: #000000;
-}
 $light_green:#effffa;
 $dark_green:#14da8f;
 $black:#000000;
@@ -23,10 +20,6 @@ $white:#fff;
   width:100%;
 }
 .service_container{
-    // background-image: url("../../assets/img/color-sharp.png");
-    // background-size: cover;
-    // background: #fff;  
-  // margin-top: 100px !important;
   display:block;
   width:80% !important;
   margin:80px auto 0 auto;
@@ -38,8 +31,7 @@ $white:#fff;
       text-align: center;
       color:lightblue;
       text-transform: uppercase;
-      letter-spacing: 5px;
-      font-size: 28px;
+      // font-size: 28px;
       border-image-source:  linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(222,97,97,1) 57%, rgba(255,244,0,1) 100%);
       border-bottom:solid;
       border-image-slice: 1;
@@ -48,20 +40,27 @@ $white:#fff;
       margin: 0 auto;
       padding-bottom: 10px;
       padding-top: 50px;
-
       font-weight: 600;
       overflow: hidden;
+
     }    
   }
   h2{
-     font-size:2.2vw;
+     font-size:25px;
      font-weight: 600;
-     color:$black;
+     color:lightblue;
      text-align: center;
      text-transform: capitalize;
      margin-top:20px;
      line-height: 1.5;
      overflow: hidden; 
+     letter-spacing: 2px;
+
+  }
+  h5{
+    font-size: 15px;
+    letter-spacing: 1px;
+
   }
 }
 
@@ -87,7 +86,7 @@ $white:#fff;
     top:0;
     transition:all .3s ease-in-out;
     &:hover{
-      border-color: rgb(19, 255, 169);
+      border:1px solid rgb(192, 4, 148);
     }
     .content{
       position: absolute;
