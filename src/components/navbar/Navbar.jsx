@@ -1,12 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 import "./navbar.scss";
-import logo from "../../assets/ME.png"
-import {FaBehance, FaDribbble} from 'react-icons/fa';
-import {IoMailOutline} from 'react-icons/io5';
-import {IconContext} from "react-icons";
-// import Card from './component/Card';
 import {motion} from 'framer-motion';
+import { Link } from "react-scroll";
 
 let easeing = [0.6,-0.05,0.01,0.99];
 
@@ -36,7 +32,10 @@ const star={
 };
 
 const Navbar = () => {
-  const [activeNav , setActivNav] = useState("#")
+  const [click , setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false)
+
   
   
   
@@ -46,56 +45,58 @@ const Navbar = () => {
    <motion.div className="review_container" variants={stagger}>
       <nav>
         <ul>
-          <li id="#home" style={{"--clr":"#9ed8f0"}} >
-            <motion.a
-              variants={star}  
-              className={activeNav === "#" ? "active" : ""} 
-              onClick={() => setActivNav("#")} 
+          <motion.li id="#home" style={{"--clr":"#9ed8f0"}} variants={star}>
+            <Link
+              to="home" spy={true} smooth={true} offset={-50} duration={500}
+              className={click === "" ? "active" : ""} 
+              onClick={closeMenu} 
               href="#" 
               data-text="&nbsp;Home"
               >
               &nbsp;Home
-            </motion.a>
+            </Link>
 
-          </li>
-          <li id="#about"  style={{"--clr":"#ff6493"}} >
+          </motion.li>
+          <motion.li id="#about"  style={{"--clr":"#ff6493"}} variants={star}>
 
-            <motion.a 
+            <Link 
+             to="about" spy={true} smooth={true} offset={-10} duration={500}
               variants={star}  
-
-              className={activeNav === "#about" ? "active" : ""} 
-              onClick={() => setActivNav("#about")} 
+              className={click === "" ? "active" : ""} 
+              onClick={closeMenu} 
               href="#about" 
               data-text="&nbsp;About"
             >
               &nbsp;About
-            </motion.a>
+            </Link>
 
-          </li>
-          <li id="#skills"  style={{"--clr":"#ffdd1c"}} >
-            <motion.a
+          </motion.li>
+          <motion.li id="#skills"  style={{"--clr":"#ffdd1c"}} variants={star}>
+            <Link
+              to="skills" spy={true} smooth={true} offset={-10} duration={500}
               variants={star}  
 
-              className={activeNav === "#skills" ? "active" : ""} 
-              onClick={() => setActivNav("#skills")} 
+              className={click === "" ? "active" : ""} 
+              onClick={closeMenu} 
               href="#skills" 
               data-text="&nbsp;Skills"
             >
               &nbsp;Skills
-            </motion.a>
-          </li>
-          <li id="#projects"  style={{"--clr":"#dc00d4"}} >
-            <motion.a 
+            </Link>
+          </motion.li>
+          <motion.li id="#projects"  style={{"--clr":"#dc00d4"}}  variants={star}>
+            <Link
+            to="projects" spy={true} smooth={true} offset={-10} duration={500}
               variants={star}  
 
-              className={activeNav === "#projects" ? "active" : ""} 
-              onClick={() => setActivNav("#projects")} 
+              className={click === "" ? "active" : ""} 
+              onClick={closeMenu} 
               href="#projects" 
               data-text="&nbsp;Projects"
             >
               &nbsp;Projects
-            </motion.a>
-          </li>
+            </Link>
+          </motion.li>
         </ul>
 
       </nav>

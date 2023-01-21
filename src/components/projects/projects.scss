@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
 @font-face {
   font-family: f4;
   src: url(../../fonts/g2.ttf);
 }
-.vf{
+.gg{
     width: 80%;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    height: 100vh;
+
 }
 $light_green:#effffa;
 $dark_green:#14da8f;
@@ -21,7 +25,7 @@ $white:#fff;
 }
 .service_container{
   display:block;
-  width:80% !important;
+  width:80%;
   margin:80px auto 0 auto;
   margin: 0 auto;
   .title_wrapper{
@@ -30,7 +34,7 @@ $white:#fff;
       display:block;
       text-align: center;
       color:lightblue;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       // font-size: 28px;
       border-image-source:  linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(222,97,97,1) 57%, rgba(255,244,0,1) 100%);
       border-bottom:solid;
@@ -60,6 +64,7 @@ $white:#fff;
   h5{
     font-size: 15px;
     letter-spacing: 1px;
+    font-family: Raleway;
 
   }
 }
@@ -109,6 +114,7 @@ $white:#fff;
       .b1{
         justify-content: center;
         display: flex;
+        gap: 10px;
       }
       h3{
         color: #4d96eb;
@@ -120,6 +126,7 @@ $white:#fff;
         font-size: 17px;
         font-weight: 500;
         color: #ffffff;
+       
       }
     }
     &:nth-child(1){
@@ -129,6 +136,11 @@ $white:#fff;
         // box-sizing: content-box;
         // background-repeat: no-repeat;
         object-fit: fill;
+        p{
+          font-size: 15px;
+        }
+        
+        
     }
     &:nth-child(2){
         background:url("../../assets/l2.jpg");
@@ -202,9 +214,7 @@ $white:#fff;
       color:$dark_green;
       text-decoration: none;
       align-items: center;
-      span{
-        margin-right:8px;
-      }
+      
       svg{
         margin-top:3px;
       }
@@ -213,4 +223,36 @@ $white:#fff;
 }
 
 
-//framer-motion animation will be in next part, keep watching..........
+//////////////////////////
+
+@media screen and (max-width:600px) {
+  .gg{
+      width: 100%;
+      .service_title{
+        width: 70% !important;
+      }
+      .card{
+        width: calc(80% / 1);
+        height:35.67vw;
+        &:nth-child(1){
+          p{
+            font-size: 12px !important;
+          }
+        }
+
+      }
+      .content{
+        
+        h3{
+          font-size: 12px;
+        }
+        p{
+          
+          font-size: 15px !important;
+          
+         
+        }
+      }
+     
+  }
+}

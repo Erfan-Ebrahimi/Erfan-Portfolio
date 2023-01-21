@@ -59,3 +59,45 @@
 
     }
 }
+
+
+
+@media screen and (max-width:600px) {
+    .about{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+
+        .cont{
+            border-left: 2px solid;
+            border-top: 2px solid;
+        }
+
+        .left{
+            width: 100%;
+            img{
+                width: 300px;
+            }
+
+        }
+        .right{
+            width: 100%;
+            h3{
+                font-size: 25px;
+                font-family: f4 !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 10px;
+                color: rgb(255, 74, 117);
+            }
+            p{
+                font-family: f4 !important;
+                font-size: 15px;
+                text-align: justify;
+                font-weight: 100 !important;
+            }
+        }
+    }
+  }

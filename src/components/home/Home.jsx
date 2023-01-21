@@ -88,8 +88,13 @@ const btnGroup={
 };
 
 function Home() {
+
+  const btnHandle = (e) => {
+    alert("Call Me 09918790969");
+    e.preventDefault();
+  }
   return (
-    <motion.div initial='initial' animate='animate' className='ll'>
+    <motion.div initial='initial' animate='animate' className='ll' id="home">
       
       <motion.div className="content_wrapper" initial={{opacity:0,scale:0}} animate={{opacity:1, scale:1}} transition={{duration:0.3, ease:easeing}}>
         
@@ -138,16 +143,16 @@ function Home() {
               Download CV
               {/* <BsGithub/> */}
             </motion.a>
-            <motion.a href='#w' className="btn btn_secondary" variants={btnGroup} whileHover={{scale:1.05,backgroundColor:"#fefefe"}} whileTap={{scale:0.95}}>
+            <motion.a href='09918790969' className="btn btn_secondary" variants={btnGroup} whileHover={{scale:1.05,backgroundColor:"#fefefe"}} whileTap={{scale:0.95}} onClick={btnHandle}>
               Let's Talk
             </motion.a>
           </motion.div>
           
           <motion.div className="review_container" variants={stagger}>
             <IconContext.Provider value={{size:"22px"}}>
-                <motion.a className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsInstagram className='iconss'/></motion.a>
-                <motion.a className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsTelegram className='iconss'/></motion.a>
-                <motion.a className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsGithub className='iconss'/></motion.a>
+                <motion.a href='http://www.instagram.com/__erfan__ebrahimi' target="_blank" rel="noreferrer" className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsInstagram className='iconss'/></motion.a>
+                <motion.a href='https://t.me/ME_7676' target="_blank" rel="noreferrer" className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsTelegram className='iconss'/></motion.a>
+                <motion.a href='https://github.com/Erfan-Ebrahimi' target="_blank" rel="noreferrer" className='link-socials' variants={star} whileHover={{scale:1.3,borderRadius:'100%'}}><BsGithub className='iconss'/></motion.a>
             </IconContext.Provider>
           </motion.div>
         </div>

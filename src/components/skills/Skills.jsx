@@ -1,6 +1,6 @@
 import "./skills.scss";
 import { motion } from "framer-motion";
-
+// import {Link}
 
 import {AiOutlineHtml5} from "react-icons/ai";
 import {TbBrandCss3} from "react-icons/tb";
@@ -12,14 +12,6 @@ import {AiOutlineApi} from "react-icons/ai";
 import {BsGithub} from "react-icons/bs";
 import {SiTailwindcss} from "react-icons/si";
 import {SiMaterialui} from "react-icons/si"
-
-// import "./projects.scss";
-// import {motion} from 'framer-motion';
-
-
-import {IconContext} from "react-icons";
-// import {BsGithub} from "react-icons/bs";
-import {MdVisibility} from "react-icons/md";
 
 
 const container = {
@@ -42,14 +34,7 @@ const item = {
     }
 }
 
-const hoverEffect = {
-    whileHover:{
-        scale:1.5,rotate:700,borderRadius:"100%"
-    },
-    whileTap:{
-        scale:.8,rotate:720,borderRadius:"100%"
-    },
-}
+
 
 
 
@@ -69,7 +54,7 @@ const Skills = () => {
                 exit={{opacity:0}}
                 transition={{duration:.5, delay:1.8}}
             >
-                <h2>My Skills</h2>
+                <h2>SKILLS</h2>
                 <h5>What Skills I Have</h5>
 
             </motion.span>

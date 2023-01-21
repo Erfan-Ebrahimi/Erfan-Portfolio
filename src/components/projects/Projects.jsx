@@ -40,8 +40,8 @@ const hoverEffect = {
 
 const Projects = () => {
   return (
-    <div className="gg">
-    <motion.div id='projects' className="service_container">
+    <div className="gg" id='projects'>
+    <motion.div  className="service_container">
         <div className="title_wrapper">
             <motion.span className="service_title"
                 initial={{y:20, opacity:0}}
@@ -49,7 +49,7 @@ const Projects = () => {
                 exit={{opacity:0}}
                 transition={{duration:.5, delay:1.8}}
             >
-                <h2>My Projects</h2>
+                <h2>PROJECTS</h2>
                 <h5>My Recent Works</h5>
 
             </motion.span>
@@ -65,12 +65,12 @@ const Projects = () => {
                     <p>It is a mini react project (SPA) admin panel, in which (recharts) is used to display charts and (mui/data-grid) is used for tables. The New User page form was developed with (Formik) and I took help from (yup) to validate it. I also used sass for more optimal styling. In this project, information is taken from fake api and stored in state. I am still developing this project. This project is not yet responsive.</p>
                     <div className='b1'>
                     <motion.a href='https://github.com/Erfan-Ebrahimi/dashboard-er' target="_blank" rel="noreferrer" className="service_icon" style={{background:"none"}} variants={hoverEffect} whileHover="whileHover" whileTap='whileTap'>
-                        <IconContext.Provider value={{color:"#f313ff", size:"22px"}}>
+                        <IconContext.Provider value={{color:"#f313ff", size:"30px"}}>
                             <BsGithub/>
                         </IconContext.Provider>
                     </motion.a>
                     <motion.a href='https://dashboard-er.vercel.app/' target="_blank" rel="noreferrer" className="service_icon" style={{background:"none"}} variants={hoverEffect} whileHover="whileHover" whileTap='whileTap'>
-                        <IconContext.Provider value={{color:"#f313ff", size:"22px"}}>
+                        <IconContext.Provider value={{color:"#f313ff", size:"25px"}}>
                             <MdVisibility/>
                         </IconContext.Provider>
                     </motion.a>
@@ -78,7 +78,7 @@ const Projects = () => {
                 </div>
             </motion.a>
             <motion.a href='https://weather-er.vercel.app/' className="card" variants={item} target="_blank" rel="noreferrer">
-            <div className="content">
+                 <div className="content">
                     <h3>weather-er</h3>
                     <p>A mini practice project with react that takes the meteorological api from the openweather site and shows it in a simple UI with the axios package.<br/>--- responsive ---</p>
                     <div className='b1'>
@@ -96,7 +96,7 @@ const Projects = () => {
                 </div>
             </motion.a>
             <motion.a href='https://ikorc.vercel.app/' className="card" variants={item} target="_blank" rel="noreferrer">
-            <div className="content">
+                 <div className="content">
                     <h3>IKORC</h3>
                     <p>This sample site project was commissioned by Shazand Refinery Public Relations, where swiper, glightbox.js and aos libraries were used for the animations on the site. <br/>--- responsive ---</p>
                     <div className='b1'>
